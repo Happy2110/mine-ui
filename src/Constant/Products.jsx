@@ -1,4 +1,3 @@
-
 export const Products = [
   {
     id: 1,
@@ -7,13 +6,13 @@ export const Products = [
     price: 120,
     delivery: "Free",
     offer: "10% Off",
-    image: "/images/apple.jpg",
+    image: "https://www.heart.org/en/-/media/AHA/Recipe/Article-Images/Apples.jpg",
     quantity: "1 kg",
     alsoKnownAs: "Seb",
     seasonality: "Available year-round, best in winter.",
-    basicInfo: "Apples are sweet, crunchy fruits...",
-    health: "Rich in fiber and Vitamin C...",
-    speciality: "Eaten raw, in pies, juices, etc."
+    basicInfo: "Apples are sweet, crunchy fruits enjoyed fresh or in cooked dishes.",
+    health: "Rich in dietary fiber, Vitamin C, and antioxidants. Supports heart health and digestion.",
+    speciality: "Eaten raw, in pies, juices, salads, or smoothies."
   },
   {
     id: 2,
@@ -22,13 +21,13 @@ export const Products = [
     price: 60,
     delivery: "Charged",
     offer: "No Offer",
-    image: "/images/banana.jpg",
+    image: "https://nutritionsource.hsph.harvard.edu/wp-content/uploads/2018/08/bananas-1354785_1920.jpg",
     quantity: "1 dozen",
     alsoKnownAs: "Kela",
-    seasonality: "Available all year.",
-    basicInfo: "Bananas are soft, sweet fruits...",
-    health: "Great source of potassium...",
-    speciality: "Used in shakes, desserts, and snacks."
+    seasonality: "Available all year round.",
+    basicInfo: "Bananas are soft, sweet tropical fruits with a creamy texture.",
+    health: "Excellent source of potassium, Vitamin B6, and fiber. Helps maintain energy and supports digestion.",
+    speciality: "Used in shakes, desserts, snacks, and baked goods."
   },
   {
     id: 3,
@@ -37,13 +36,13 @@ export const Products = [
     price: 40,
     delivery: "Free",
     offer: "5% Off",
-    image: "/images/tomato.jpg",
-    quantity: "500 g",
+    image: "https://media.post.rvohealth.io/wp-content/uploads/2020/09/AN313-Tomatoes-732x549-Thumb.jpg",
+    quantity: "1 KG",
     alsoKnownAs: "Tamatar",
-    seasonality: "Best in summer.",
-    basicInfo: "Tomatoes are juicy red vegetables...",
-    health: "Rich in antioxidants and Vitamin C...",
-    speciality: "Used in curries, salads, and sauces."
+    seasonality: "Available year-round, peak in summer.",
+    basicInfo: "Tomatoes are juicy, tangy fruits often used as vegetables in cooking.",
+    health: "Rich in Vitamin C, potassium, folate, and antioxidants like lycopene.",
+    speciality: "Essential for curries, salads, sauces, soups, and juices."
   },
   {
     id: 4,
@@ -52,31 +51,27 @@ export const Products = [
     price: 35,
     delivery: "Free",
     offer: "No Offer",
-    image: "/images/potato.jpg",
+    image: "https://www.forksoverknives.com/uploads/2025/03/new-potatoes-featured-image.jpg",
     quantity: "1 kg",
     alsoKnownAs: "Aloo",
     seasonality: "Available year-round.",
-    basicInfo: "Potatoes are starchy vegetables...",
-    health: "Source of carbs and energy...",
-    speciality: "Used in fries, curries, chips, etc."
+    basicInfo: "Potatoes are starchy tubers widely consumed worldwide.",
+    health: "Good source of carbohydrates, potassium, and Vitamin C. Provides quick energy.",
+    speciality: "Used in fries, chips, curries, snacks, and baked dishes."
   },
   {
     id: 5,
-    name: "Tendli",
+    name: "Lady Finger (Bhindi)",
     type: "Vegetable",
     price: 40,
-    offerPrice: 30,
-    offer: "25% Off",
-    weight: "250 g",
     delivery: "Free",
-    image: "/images/tendli.jpg",
-    alsoKnownAs: "Ivy gourd, Tondli, Tindora, Kundru",
-    seasonality:
-      "Tendli can be cultivated throughout the year. Peak seasons: rainy & summer.",
-    basicInfo:
-      "Tendli is green in colour and turns bright red when ripe. It has white flesh and small seeds inside...",
-    health:
-      "Boosts metabolism, low in calories, improves glucose tolerance, lowers blood sugar, aids digestion.",
-    speciality: "Can be simmered or fried with other vegetables."
+    offer: "5% Off",
+    image: "https://5.imimg.com/data5/SELLER/Default/2022/6/IX/CW/FY/31131351/all-you-need-to-know-about-okra-health-benefits-jpg-500x500.jpg",
+    quantity: "1 kg",
+    alsoKnownAs: "Okra, Bhindi",
+    seasonality: "Available year-round, best in summer and monsoon.",
+    basicInfo: "Lady finger is a green, slender vegetable with a mild flavor and sticky texture when cut.",
+    health: "Low in calories, rich in fiber, Vitamin C, and folate. Supports digestion and blood sugar control.",
+    speciality: "Commonly stir-fried, curried, or used in soups and stews."
   }
 ];

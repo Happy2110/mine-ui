@@ -4,12 +4,13 @@ import Footer from "../../components/layout/Footer";
 import Services from "../../components/layout/Services";
 import ContactUs from "../../components/layout/ContactUs";
 import AboutUs from "../../components/layout/AboutUs";
+import Features from "../../components/layout/Features";
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[var(--color-secondary)] from-20% via-[var(--color-primary)] via-40% to-[var(--color-secondary)] to-90% text-white py-20 px-6 text-center shadow-lg">
+      <section className="bg-gradient-to-r from-[var(--color-secondary)] from-20% via-[var(--color-primary)] via-40% to-[var(--color-secondary)] to-90% text-white py-12 px-6 text-center shadow-lg">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
           Welcome to <span className="text-accent">Metro Mine</span>
         </h1>
@@ -30,10 +31,11 @@ export default function LandingPage() {
             Register
           </a>
         </div>
+        <Services />
       </section>
 
-      {/* Services Section */}
-       <Services />
+
+       <Features />
       <ContactUs />
       <AboutUs />
       <Footer />

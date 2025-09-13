@@ -20,15 +20,15 @@ export default function Sidebar({ filters, setFilters }) {
     "accent-red-500 h-5 w-5 rounded cursor-pointer transition-colors duration-300";
 
   const labelStyle =
-    "ml-2 text-gray-700 font-medium hover:text-red-500 transition-colors text-lg";
+    "ml-2 text-gray-700 text-sm hover:text-red-500 transition-colors font-normal";
 
   return (
-<aside className="w-64 bg-gradient-to-b from-red-500 to-blue-500 p-6 rounded-lg shadow-xl space-y-6">
-      <h2 className="text-3xl font-bold mb-4 text-white text-center">Filters</h2>
+<aside className="w-64 bg-gradient-to-b from-red-500 to-blue-500 p-6  shadow-xl space-y-6">
+      <h2 className="text-xl font-bold mb-4 text-white text-center">Filters</h2>
 
       {/* Product Type Card */}
       <div className="bg-white/90 p-4 rounded-lg shadow-md space-y-3">
-        <h3 className="text-xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-blue-500">
+        <h3 className="text-md font-bold mb-2 bg-clip-text  text-transparent bg-gradient-to-r from-red-500 to-blue-500">
           Item Type
         </h3>
         <label className="flex items-center my-1">
@@ -43,7 +43,7 @@ export default function Sidebar({ filters, setFilters }) {
 
       {/* Delivery Card */}
       <div className="bg-white/90 p-4 rounded-lg shadow-md space-y-3">
-        <h3 className="text-xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-blue-500">
+        <h3 className="text-md font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-blue-500">
           Delivery
         </h3>
         <label className="flex items-center my-1">
@@ -58,7 +58,7 @@ export default function Sidebar({ filters, setFilters }) {
 
       {/* Offers Card */}
       <div className="bg-white/90 p-4 rounded-lg shadow-md space-y-3">
-        <h3 className="text-xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-blue-500">
+        <h3 className="text-md font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-blue-500">
           Offers
         </h3>
         <label className="flex items-center my-1">
@@ -77,7 +77,7 @@ export default function Sidebar({ filters, setFilters }) {
 
       {/* Price Range Card */}
       <div className="bg-white/90 p-4 rounded-lg shadow-md space-y-3">
-        <h3 className="text-xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-blue-500">
+        <h3 className="text-md font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-blue-500">
           Price Range
         </h3>
         <input
@@ -88,7 +88,7 @@ export default function Sidebar({ filters, setFilters }) {
           onChange={e => handlePrice(0, Number(e.target.value))}
           className="w-full h-2 rounded-lg bg-gradient-to-r from-red-500 to-blue-500 accent-red-500 cursor-pointer"
         />
-        <p className="text-gray-700 font-semibold text-lg mt-1">
+        <p className="text-gray-700 font-semibold text-sm mt-1">
           Up to <span className="text-red-600">₹{filters.priceRange[1]}</span>
         </p>
       </div>

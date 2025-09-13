@@ -4,7 +4,7 @@ import { Products } from "../../Constant/Products";
 import { useParams } from "react-router-dom";
 
 export default function ProductDetail() {
-  const {productId} = useParams()
+  const { productId } = useParams();
   const product = Products.find((product) => product.id == productId);
   if (!product) {
     return <div className="p-6 text-red-600">Product not found</div>;
@@ -14,17 +14,17 @@ export default function ProductDetail() {
     <div className="min-h-screen bg-gray-50 flex flex-col items-center px-4 md:px-12 py-10">
       {/* Breadcrumbs */}
       <nav className="text-gray-600 text-sm mb-6 self-start">
-        Home &gt; Vegetables &gt; {product.name}
+        Home &gt; Shop &gt; {product.type} &gt; {product.name}
       </nav>
 
       {/* Product Card */}
-      <div className="bg-white rounded-xl shadow-xl flex flex-col md:flex-row w-full max-w-5xl overflow-hidden">
+      <div className="bg-white rounded-xl shadow-xl flex flex-col md:flex-row w-full max-w-5xl">
         {/* Image */}
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 h-80 md:h-auto flex items-center justify-center overflow-hidden">
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-80 object-cover md:h-full"
+            className="max-h-full max-w-full object-contain"
           />
         </div>
 
@@ -36,13 +36,18 @@ export default function ProductDetail() {
               {product.offer}
             </p>
             <p className="text-2xl font-bold text-red-600 mb-2">
-              ₹{product.offerPrice}{" "}
-              <span className="line-through text-gray-400 text-lg">
-                ₹{product.price}
-              </span>
+              ₹{product.price}{" "}
+              {product.offer && product.offer !== "No Offer" && (
+                <span className="line-through text-gray-400 text-lg ml-2">
+                  ₹
+                  {Math.round(
+                    product.price / (1 - parseFloat(product.offer) / 100)
+                  )}
+                </span>
+              )}
             </p>
             <p className="text-gray-700 font-medium mb-2">
-              Size / Weight: {product.weight}
+              Size / Weight: {product.quantity}
             </p>
           </div>
 
