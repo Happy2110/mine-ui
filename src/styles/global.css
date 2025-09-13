@@ -1,0 +1,52 @@
+/* src/styles/global.css */
+@import "tailwindcss";
+
+:root {
+   /* 🎨 Colors */
+  --color-primary: #e53935; /* Red is now primary */
+  --color-secondary: #0d47a1; /* Blue as secondary */
+  --color-accent: #1e88e5;    /* Light Blue */
+  --color-light: #ffffff;
+  --color-dark: #222222;
+
+  /* 🌈 Backgrounds (more red, less blue) */
+  --color-bg: linear-gradient(135deg, #e53935 0%, #e53935 40%, #1e88e5 80%, #0d47a1 100%);
+  --color-card: rgba(255, 255, 255, 0.15);
+  --color-border: rgba(255, 255, 255, 0.3);
+
+  /* ✨ Frosted Glass */
+  --frosted-bg: rgba(255, 255, 255, 0.15);
+  --frosted-blur: 12px;
+
+  /* 🖋 Fonts */
+  --font-primary: 'Poppins', 'Inter', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+}
+
+/* 🌐 Apply base theme */
+body {
+  font-family: var(--font-primary);
+  background: var(--color-bg);
+  color: var(--color-dark);
+  @apply antialiased;
+}
+
+/* 🪟 Utilities */
+.bg-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(var(--frosted-blur));
+}
+
+.bg-frosted {
+  background: var(--frosted-bg);
+  backdrop-filter: blur(var(--frosted-blur));
+}
+
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+
+.bg-primary { background: var(--color-primary); }
+.bg-secondary { background: var(--color-secondary); }
+.bg-accent { background: var(--color-accent); }
