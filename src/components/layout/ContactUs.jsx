@@ -29,7 +29,7 @@ export default function ContactUs() {
             <p className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent 
               bg-gradient-to-r from-red-600 via-red-500 to-blue-500 flex items-center space-x-3">
               <FiPhone className="inline text-3xl  text-primary" />
-              <span>+91 9300 14480</span>
+              <span>+91 99300 14480</span>
             </p>
             <p className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent 
               bg-gradient-to-r from-red-600 via-red-500 to-blue-500 flex items-center space-x-3">
